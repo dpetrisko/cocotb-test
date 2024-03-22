@@ -1,0 +1,21 @@
+## Set common environment variables
+SHELL=/bin/bash
+
+# Tools
+MKDIR    ?= mkdir
+CAT      ?= cat
+WGET     ?= wget
+TAR      ?= tar
+PIP      ?= pip
+PYTHON   ?= python
+CLONE    ?= git clone
+ECHO     ?= echo
+COVERAGE ?= verilator_coverage 
+GENHTML  ?= genhtml
+
+# cocotb globals
+COCOTB_VENV_DIR    := $(TOP)/.venv
+COCOTB_WORK_DIR    := $(TOP)/work
+COCOTB_INSTALL_DIR := $(TOP)/install
+COCOTB_TOUCH_DIR   := $(TOP)/install/touchfiles
+

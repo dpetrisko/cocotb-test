@@ -1,0 +1,12 @@
+.venv/
+install/
+work/
+touchfiles/
+results.xml
+results_coverage.xml
+results_coverage.yaml
+sim_build/
+__pycache__/
+coverage.dat
+dump.fst
+coverage

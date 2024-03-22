@@ -1,0 +1,23 @@
+## Set common environment variables
+TOP ?= $(shell git rev-parse --show-toplevel)
+include $(TOP)/Makefile.common
+
+# coverage target
+COVERAGE_DIR  := coverage
+COVERAGE_DAT  := coverage.dat
+COVERAGE_INFO := $(COVERAGE_DIR)/coverage.info
+COVERAGE_HTML := $(COVERAGE_DIR)/coverage.html
+COVERAGE_OPTS += --rank
+COVERAGE_OPTS += --annotate $(COVERAGE_DIR)
+COVERAGE_OPTS += --annotate-all
+COVERAGE_OPTS += --write-info $(COVERAGE_INFO)
+
+$(COVERAGE_DAT): sim
+
+$(COVERAGE_INFO): $(COVERAGE_DAT)
+	$(COVERAGE) $< $(COVERAGE_OPTS)
+
+GENHTML_OPTS += --output-directory $(COVERAGE_DIR)
+$(COVERAGE_HTML): $(COVERAGE_INFO)
+	$(GENHTML) $< $(GENHTML_OPTS)
+
