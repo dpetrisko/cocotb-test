@@ -1,0 +1,60 @@
+dut:
+  cover_percentage: 56.52
+  coverage: 13
+  size: 23
+  type: <class 'cocotb_coverage.coverage.CoverItem'>
+dut.q_all:
+  at_least: 1
+  bins:_hits:
+    0: 16
+    1: 0
+    2: 0
+    3: 15
+    4: 0
+    5: 0
+    6: 17
+    7: 0
+    8: 0
+    9: 14
+    10: 0
+    11: 0
+    12: 17
+    13: 0
+    14: 0
+    15: 21
+  cover_percentage: 37.5
+  coverage: 6
+  size: 16
+  type: <class 'cocotb_coverage.coverage.CoverPoint'>
+  weight: 1
+dut.q_even:
+  at_least: 1
+  bins:_hits:
+    false: 50
+    true: 50
+  cover_percentage: 100.0
+  coverage: 2
+  size: 2
+  type: <class 'cocotb_coverage.coverage.CoverPoint'>
+  weight: 1
+dut.q_large:
+  at_least: 1
+  bins:_hits:
+    false: 48
+    true: 52
+  cover_percentage: 100.0
+  coverage: 2
+  size: 2
+  type: <class 'cocotb_coverage.coverage.CoverPoint'>
+  weight: 1
+dut.q_large_even:
+  at_least: 1
+  bins:_hits:
+    (False, True): 35
+    (True, False): 33
+    (True, True): 17
+  cover_percentage: 100.0
+  coverage: 3
+  size: 3
+  type: <class 'cocotb_coverage.coverage.CoverCross'>
+  weight: 1

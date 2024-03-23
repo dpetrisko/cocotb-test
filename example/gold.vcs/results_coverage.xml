@@ -1,0 +1,35 @@
+<top abs_name="top" size="23" coverage="13" cover_percentage="56.52">
+  <dut size="23" coverage="13" cover_percentage="56.52" abs_name="top.dut">
+    <q_all size="16" coverage="6" cover_percentage="37.5" abs_name="top.dut.q_all" weight="1" at_least="1">
+      <bin0 bin="0" hits="17" abs_name="top.dut.q_all.bin0" />
+      <bin1 bin="1" hits="0" abs_name="top.dut.q_all.bin1" />
+      <bin2 bin="2" hits="0" abs_name="top.dut.q_all.bin2" />
+      <bin3 bin="3" hits="12" abs_name="top.dut.q_all.bin3" />
+      <bin4 bin="4" hits="0" abs_name="top.dut.q_all.bin4" />
+      <bin5 bin="5" hits="0" abs_name="top.dut.q_all.bin5" />
+      <bin6 bin="6" hits="24" abs_name="top.dut.q_all.bin6" />
+      <bin7 bin="7" hits="0" abs_name="top.dut.q_all.bin7" />
+      <bin8 bin="8" hits="0" abs_name="top.dut.q_all.bin8" />
+      <bin9 bin="9" hits="22" abs_name="top.dut.q_all.bin9" />
+      <bin10 bin="10" hits="0" abs_name="top.dut.q_all.bin10" />
+      <bin11 bin="11" hits="0" abs_name="top.dut.q_all.bin11" />
+      <bin12 bin="12" hits="13" abs_name="top.dut.q_all.bin12" />
+      <bin13 bin="13" hits="0" abs_name="top.dut.q_all.bin13" />
+      <bin14 bin="14" hits="0" abs_name="top.dut.q_all.bin14" />
+      <bin15 bin="15" hits="12" abs_name="top.dut.q_all.bin15" />
+    </q_all>
+    <q_even size="2" coverage="2" cover_percentage="100.0" abs_name="top.dut.q_even" weight="1" at_least="1">
+      <bin0 bin="True" hits="54" abs_name="top.dut.q_even.bin0" />
+      <bin1 bin="False" hits="46" abs_name="top.dut.q_even.bin1" />
+    </q_even>
+    <q_large size="2" coverage="2" cover_percentage="100.0" abs_name="top.dut.q_large" weight="1" at_least="1">
+      <bin0 bin="True" hits="47" abs_name="top.dut.q_large.bin0" />
+      <bin1 bin="False" hits="53" abs_name="top.dut.q_large.bin1" />
+    </q_large>
+    <q_large_even size="3" coverage="3" cover_percentage="100.0" abs_name="top.dut.q_large_even" weight="1" at_least="1">
+      <bin0 bin="(True, True)" hits="13" abs_name="top.dut.q_large_even.bin0" />
+      <bin1 bin="(True, False)" hits="41" abs_name="top.dut.q_large_even.bin1" />
+      <bin2 bin="(False, True)" hits="34" abs_name="top.dut.q_large_even.bin2" />
+    </q_large_even>
+  </dut>
+</top>

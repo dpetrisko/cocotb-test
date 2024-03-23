@@ -1,0 +1,20 @@
+verilated_fst_c.o: \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_fst_c.cpp \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilatedos.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_config.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_types.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_funcs.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_fst_c.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_trace.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fastlz.c \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fastlz.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fastlz.c \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fstapi.c \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fst_config.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/fstapi.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/lz4.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/gtkwave/lz4.c \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_trace_imp.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_intrinsics.h \
+ /mnt/users/ssd0/no_backup/petrisko/cocotb_test/.venv/share/verilator/include/verilated_threads.h

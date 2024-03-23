@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!DOCTYPE cov SYSTEM "ucdb_srcinfo.dtd">
+  <srcinfo name="/mnt/users/ssd0/no_backup/petrisko/cocotb_test/example/sim_build"  >
+    <ucapi_version  major_ver="13"  minor_ver="1"  patch_str="L-2016.06-SP2-15"  />
+      <fileinfo name="/mnt/users/ssd0/homes/petrisko/scratch/cocotb_test/example/dff.sv"  id="0"  />
+    </srcinfo>

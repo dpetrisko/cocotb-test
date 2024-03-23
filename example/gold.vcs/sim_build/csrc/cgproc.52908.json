@@ -1,0 +1,80 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        },
+        "dff": {
+            "Compiled": "Yes",
+            "Compiled Times": 1
+        }
+    },
+    "CompUnits": {
+        "amcQw_d": {
+            "mod": "...MASTER...",
+            "checksum": 0,
+            "bytes": 8064,
+            "out": "objs/amcQw_d.o",
+            "mode": 4
+        },
+        "reYIK_d": {
+            "mod": "std",
+            "checksum": 0,
+            "bytes": 40296,
+            "out": "reYIK_d.o",
+            "archive": "archive.0/_52908_archive_1.a",
+            "mode": 4
+        },
+        "IWW0i_d": {
+            "mod": "dff",
+            "checksum": 0,
+            "bytes": 10947,
+            "out": "IWW0i_d.o",
+            "archive": "archive.0/_52908_archive_1.a",
+            "mode": 4
+        }
+    },
+    "reusePaths": {},
+    "stat": {
+        "ru_self_end": {
+            "ru_utime_sec": 0.071986999999999995,
+            "ru_stime_sec": 0.035992999999999997,
+            "ru_maxrss_kb": 115644,
+            "ru_nvcsw": 28,
+            "ru_minflt": 7842,
+            "ru_nivcsw": 16,
+            "ru_majflt": 0
+        },
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0029989999999999999,
+            "ru_stime_sec": 0.0019989999999999999,
+            "ru_maxrss_kb": 24904,
+            "ru_nvcsw": 0,
+            "ru_minflt": 216,
+            "ru_nivcsw": 1,
+            "ru_majflt": 0
+        },
+        "peak_mem_kb": 289000
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.0/_52908_archive_1.a",
+            "objects": [
+                [
+                    "reYIK_d.o",
+                    40296
+                ],
+                [
+                    "IWW0i_d.o",
+                    10947
+                ],
+                [
+                    "amcQwB.o",
+                    108118
+                ]
+            ],
+            "size": 159361
+        }
+    ]
+}
