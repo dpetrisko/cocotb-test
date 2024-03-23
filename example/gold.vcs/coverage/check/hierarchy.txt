@@ -1,7 +1,0 @@
-Design Hierarchy
-
-
-----------------
-SCORE  LINE   COND   TOGGLE FSM    BRANCH     
-100.00 100.00 --     100.00 --     --     dff 
-
