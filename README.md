@@ -33,5 +33,12 @@ Makefile # Used to run a test
          # There are also cocotb targets linked here, but we suggest to use the
          #    bsg-* wrappers instead
          # NOTE: Change SIM=vcs / SIM=verilator to switch simulators
-gold # Example of golden results to check if your environment is set up correctly
+gold.vcs # Example of golden results to check if your environment is set up correctly
+gold.verilator # Example of golden results to check if your environment is set up correctly
 ```
+
+Additional info can be found at:
+* https://docs.cocotb.org/en/stable/
+* https://cocotb-coverage.readthedocs.io/en/latest/
+* https://verilator.org/guide/latest/
+
