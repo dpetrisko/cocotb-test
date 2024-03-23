@@ -28,8 +28,10 @@ dff.sv # Example systemverilog component
 test_dff.py # Example cocotb testbench
 Makefile # Used to run a test
          #   bsg-run: run a coco-tb test and generate coverage reports
+         #   bsg-view: open up a waveform in gtkwave (verilator) or dve (vcs)
          #   bsg-clean: clean up the example directory
          # There are also cocotb targets linked here, but we suggest to use the
          #    bsg-* wrappers instead
+         # NOTE: Change SIM=vcs / SIM=verilator to switch simulators
 gold # Example of golden results to check if your environment is set up correctly
 ```

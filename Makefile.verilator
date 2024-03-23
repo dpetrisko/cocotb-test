@@ -2,7 +2,10 @@
 TOP ?= $(shell git rev-parse --show-toplevel)
 include $(TOP)/Makefile.common
 
+GTKWAVE ?= gtkwave
+
 # coverage target
+COVERAGE := verilator_coverage 
 COVERAGE_DIR  := coverage
 COVERAGE_DAT  := coverage.dat
 COVERAGE_INFO := $(COVERAGE_DIR)/coverage.info
@@ -20,4 +23,7 @@ $(COVERAGE_INFO): $(COVERAGE_DAT)
 GENHTML_OPTS += --output-directory $(COVERAGE_DIR)
 $(COVERAGE_HTML): $(COVERAGE_INFO)
 	$(GENHTML) $< $(GENHTML_OPTS)
+
+bsg-view:
+	$(GTKWAVE) -f dump.fst &
 

@@ -1,0 +1,42 @@
+## Set common environment variables
+TOP ?= $(shell git rev-parse --show-toplevel)
+include $(TOP)/Makefile.common
+
+# Extra tools
+URG  ?= urg
+_DVE ?= dve
+
+# Setup cadenv
+ifeq (,$(wildcard $(TOP)/bsg_cadenv/cadenv.mk))
+$(info ************************************************************************************)
+$(info * bsg_cadenv does not exist:)
+$(info *   please ask for access to https://github.com/bespoke-silicon-group/bsg_cadenv)
+$(info *   or switch to SIM=verilator)
+$(info ************************************************************************************)
+$(error )
+else
+include $(TOP)/bsg_cadenv/cadenv.mk
+VCS_BIN_DIR := $(VCS_BIN)
+endif
+
+# coverage target
+COVERAGE_DIR  := coverage
+COVERAGE_DB   := $(COVERAGE_DIR)/coverage.vdb
+COVERAGE_INFO := $(COVERAGE_DIR)/coverage.info
+COVERAGE_HTML := $(COVERAGE_DIR)/coverage.html
+
+URG_OPTS += -full64
+URG_OPTS += -dir $(notdir $(COVERAGE_DB))
+URG_OPTS += -report check
+URG_OPTS += -format both
+
+$(COVERAGE_DB): sim
+
+$(COVERAGE_HTML): $(COVERAGE_DB)
+	cd $(@D); $(URG) $(URG_OPTS)
+
+DVE_OPTS += -full64
+DVE_OPTS += -vpd vcdplus.vpd
+bsg-view: 
+	$(_DVE) $(DVE_OPTS) &
+

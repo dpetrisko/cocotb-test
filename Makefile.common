@@ -10,7 +10,6 @@ PIP      ?= pip
 PYTHON   ?= python
 CLONE    ?= git clone
 ECHO     ?= echo
-COVERAGE ?= verilator_coverage 
 GENHTML  ?= genhtml
 
 # cocotb globals

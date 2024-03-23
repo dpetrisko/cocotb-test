@@ -33,9 +33,7 @@ async def dff_simple_test(dut):
         LogicArray("0000")
         if cocotb.SIM_NAME.lower().startswith("verilator")
         else (
-            LogicArray("UUUU")
-            if LANGUAGE.lower().startswith("vhdl")
-            else LogicArray("XXXX")
+            LogicArray("XXXX")
         )
     )
     assert LogicArray(dut.q.value) == initial
