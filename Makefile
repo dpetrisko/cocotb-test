@@ -46,14 +46,15 @@ $(python311_tag): | $(openssl_tag)
 
 ACTIVATE := $(COCOTB_VENV_DIR)/bin/activate
 $(venv_tag): | $(python311_tag)
-	$(COCOTB_INSTALL_DIR)/bin/pip$(PYTHON311_SHORT) install env
-	$(COCOTB_INSTALL_DIR)/bin/python$(PYTHON311_SHORT) -m venv --copies $(COCOTB_VENV_DIR)
+	LD_LIBRARY_PATH=$(COCOTB_INSTALL_DIR)/lib:$$LD_LIBRARY_PATH; \
+		$(COCOTB_INSTALL_DIR)/bin/pip$(PYTHON311_SHORT) install env; \
+		$(COCOTB_INSTALL_DIR)/bin/python$(PYTHON311_SHORT) -m venv --copies $(COCOTB_VENV_DIR)
 	$(ECHO) 'LD_LIBRARY_PATH=$(COCOTB_INSTALL_DIR)/lib:$$LD_LIBRARY_PATH' >> $(ACTIVATE)
 	$(ECHO) 'export LD_LIBRARY_PATH' >> $(ACTIVATE)
 	touch $@
 
 $(cocotb_tag): | $(venv_tag)
-	$(SOURCE) $(ACTIVATE); \
+	source $(ACTIVATE); \
 		$(PIP) install --no-cache-dir -r requirements.txt
 	touch $@
 
